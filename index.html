@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Chonghyuk (Andrew) Song</title>
+  
+  <meta name="author" content="Chonghyuk Song">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Chonghyuk (Andrew) Song</name>
+              </p>
+              <p>I'm a 2nd-year master's student at CMU's Robotics Institute, where I am extremely fortunate to be co-advised by <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a> and <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>. My research interests include 3D reconstruction of in-the-wild dynamic scenes from video, and its application to robotics.
+              </p>
+              <p>
+                Previously, I was at the Agency for Defense Development (ADD), where I developed autonomous mobile robots as part of my mandatory military service. I graduated from KAIST with a B.S. in Mechanical Engineering.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:chonghys@cs.cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/chonghyuksong/">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=jpw7Fi4AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/andrewsonga/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:20%;max-width:20%">
+              <a href="images/andrewsong.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/andrewsong.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  
+          <tr onmouseout="holisticnerf_stop()" onmouseover="holisticnerf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='holisticnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/totalnerf/totalnerf_2x3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img width=160 src='images/totalnerf/totalnerf_2x3.png'>
+              </div>
+              <script type="text/javascript">
+                function holisticnerf_start() {
+                  document.getElementById('holisticnerf_image').style.opacity = "1";
+                }
+
+                function holisticnerf_stop() {
+                  document.getElementById('holisticnerf_image').style.opacity = "0";
+                }
+                holisticnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Holistic Multibody Deformable Scene Reconstruction from RGBD Video</papertitle>
+              </a>
+              <br>
+              <strong>Chonghyuk Song</strong>,
+              <a href="https://gengshan-y.github.io">Gengshan Yang</a>, 
+              <a href="https://dunbar12138.github.io">Kangle Deng</a>, 
+              <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>,
+              <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>
+              <br>
+              <em>In Submission</em>
+              <br>
+              <a href="">[arXiv <i>coming soon</i>]</a>
+              <a href="">[code <i>coming soon</i>]</a>
+              <p></p>
+              <p>
+Given a single, casual RGBD video containing highly dynamic, deformable objects, our method reconstructs a compositional NeRF that represents the entire scene. Such a holistic scene reconstruction enables downstream tasks such as extreme-viewpoint synthesis from 3rd-person, egocentric, and bird's-eye-views and AR applications.
+              </p>
+            </td>
+          </tr>	
+
+          <tr onmouseout="dope_stop()" onmouseover="dope_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='lens_blurry' class='hidden'><img src="images/dope/dope_iters.gif"  width="160"></div>
+              <div id='lens_sharp'>
+                <a href="images/dope/dope_iters.gif"  width="160"><img src="images/dope/dope_iter3.png"  width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function dope_start() {
+                  document.getElementById('lens_blurry').style.display = 'inline';
+                  document.getElementById('lens_sharp').style.display = 'none';
+                }
+
+                function dope_stop() {
+                  document.getElementById('lens_blurry').style.display = 'none';
+                  document.getElementById('lens_sharp').style.display = 'inline';
+                }
+                dope_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Min_Distinctiveness_Oriented_Positional_Equilibrium_for_Point_Cloud_Registration_ICCV_2021_paper.html">
+                <papertitle>Distinctiveness Oriented Positional Equilibrium for Point Cloud Registration</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/taewon-min-991338201/">Taewon Min</a>, 
+              <strong>Chonghyuk Song</strong>,
+              <a href="https://www.linkedin.com/in/eunseok-kim-5311b817a/">Eunseok Kim</a>, 
+              <a href="https://sites.google.com/site/iwshimcv/home/">Inwook Shim</a>
+              <br>
+              <em>ICCV</em>, 2021
+              <br>
+              <a href="https://openaccess.thecvf.com//content/ICCV2021/papers/Min_Distinctiveness_Oriented_Positional_Equilibrium_for_Point_Cloud_Registration_ICCV_2021_paper.pdf">[Paper]</a>
+              <p></p>
+              <p>
+A novel positional embedding module that yields unprecedented improvements in the accuracy of existing GNN-based rigid point cloud registration methods.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="hemnet_stop()" onmouseover="hemnet_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+          <div class="two" id='pnf_image'>
+            <img src='images/hemnet/hemnet_iters.png' height="160"></div>
+          <img src='images/hemnet/hemnet_iters.png' height="160">
+          </div>
+          <script type="text/javascript">
+          function hemnet_start() {
+            document.getElementById('hemnet_image').style.opacity = "1";
+          }
+
+          function hemnet_stop() {
+            document.getElementById('hemnet_image').style.opacity = "0";
+          }
+          hemnet_stop()
+          </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="">
+          <papertitle>Improving Gradient Flow with Unrolled Highway Expectation Maximization</papertitle>
+          </a> <br>
+          <strong>Chonghyuk Song</strong>,
+          <a href="https://www.linkedin.com/in/eunseok-kim-5311b817a/">Eunseok Kim</a>,
+          <a href="https://sites.google.com/site/iwshimcv/home">Inwook Shim</a>
+          <br>
+          <em>AAAI</em>, 2021
+          <br>
+          <a href="https://arxiv.org/abs/2012.04926">[arXiv]</a>
+          <p></p>
+          <p>
+          Replacing unrolled expectation maximization (EM) layers in neural networks with generalized EM layers based on the Newton-Rahpson method introduces highway connections, resulting in improved gradient flow during backpropagation.
+          </p>
+          </td>
+          </tr> 
+
+
+          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='images/virtuallever/virtuallever.png' width="160"></div>
+                <img src='images/virtuallever/virtuallever.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Efficient Design Space Exploration of Multi-Mode, Two-Planetary-Gear, Power-Split Hybrid Electric Powertrains via Virtual Levers</papertitle>
+              </a>
+              <br>
+              <strong>Chonghyuk Song</strong>,
+              Jaeho Hwang,
+              <a href="http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1">Dongsuk Kum</a>
+              <br>
+              <em>IEEE TITS, 2020</em>
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9269486">[Paper]</a>
+              <p></p>
+              <p>
+              A highly efficient design methodology that finds the optimal multi-mode, two-planetary-gear powertrain by leveraging the virtual lever, a modeling tool that eliminates the redundancy in the physical design space.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

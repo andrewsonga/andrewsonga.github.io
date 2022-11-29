@@ -1,0 +1,1 @@
+ffmpeg -i nvs-inputview-rgb_with_asset.mp4 -i nvs-inputview-dphgt.mp4 -i nvs-povcams-mesh.mp4 -i nvs-bev-rgb.mp4 -i nvs-tpsview-rgb.mp4 -i nvs-fpsview-rgb.mp4 -filter_complex "[0:v][1:v][2:v]hstack=inputs=3[top];[3:v][4:v][5:v]hstack=inputs=3[bottom];[top][bottom]vstack=inputs=2[v]" -map "[v]" totalnerf_2x3.mp4
